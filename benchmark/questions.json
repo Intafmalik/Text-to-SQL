@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "How many customers are there in total?",
+    "difficulty": "easy",
+    "category": "count",
+    "tables": ["customers"],
+    "ground_truth_sql": "SELECT COUNT(*) AS total_customers FROM customers;"
+  },
+  {
+    "id": 2,
+    "question": "List all customers from France.",
+    "difficulty": "easy",
+    "category": "filter",
+    "tables": ["customers"],
+    "ground_truth_sql": "SELECT \"customerNumber\", \"customerName\", city FROM customers WHERE country = 'France' ORDER BY \"customerName\";"
+  },
+  {
+    "id": 3,
+    "question": "What are the top 5 customers by credit limit?",
+    "difficulty": "easy",
+    "category": "sorting",
+    "tables": ["customers"],
+    "ground_truth_sql": "SELECT \"customerName\", \"creditLimit\" FROM customers ORDER BY \"creditLimit\" DESC LIMIT 5;"
+  },
+  {
+    "id": 4,
+    "question": "How many products are in each product line?",
+    "difficulty": "easy",
+    "category": "aggregation",
+    "tables": ["products"],
+    "ground_truth_sql": "SELECT \"productLine\", COUNT(*) AS product_count FROM products GROUP BY \"productLine\" ORDER BY product_count DESC;"
+  },
+  {
+    "id": 5,
+    "question": "What is the total revenue from all orders?",
+    "difficulty": "medium",
+    "category": "aggregation",
+    "tables": ["orderdetails"],
+    "ground_truth_sql": "SELECT ROUND(SUM(\"priceEach\" * \"quantityOrdered\"), 2) AS total_revenue FROM orderdetails;"
+  },
+  {
+    "id": 6,
+    "question": "List the top 10 best-selling products by total quantity ordered.",
+    "difficulty": "medium",
+    "category": "join + aggregation",
+    "tables": ["products", "orderdetails"],
+    "ground_truth_sql": "SELECT p.\"productName\", SUM(od.\"quantityOrdered\") AS total_qty FROM products p JOIN orderdetails od ON p.\"productCode\" = od.\"productCode\" GROUP BY p.\"productCode\", p.\"productName\" ORDER BY total_qty DESC LIMIT 10;"
+  },
+  {
+    "id": 7,
+    "question": "How many orders were placed each year?",
+    "difficulty": "medium",
+    "category": "date aggregation",
+    "tables": ["orders"],
+    "ground_truth_sql": "SELECT EXTRACT(YEAR FROM \"orderDate\") AS year, COUNT(*) AS order_count FROM orders GROUP BY year ORDER BY year;"
+  },
+  {
+    "id": 8,
+    "question": "Which customers have never placed an order?",
+    "difficulty": "medium",
+    "category": "not exists / left join",
+    "tables": ["customers", "orders"],
+    "ground_truth_sql": "SELECT c.\"customerNumber\", c.\"customerName\" FROM customers c LEFT JOIN orders o ON c.\"customerNumber\" = o.\"customerNumber\" WHERE o.\"orderNumber\" IS NULL ORDER BY c.\"customerName\";"
+  },
+  {
+    "id": 9,
+    "question": "What is the total payment received from each customer, sorted by highest payment first?",
+    "difficulty": "medium",
+    "category": "join + aggregation",
+    "tables": ["customers", "payments"],
+    "ground_truth_sql": "SELECT c.\"customerName\", ROUND(SUM(p.amount), 2) AS total_paid FROM customers c JOIN payments p ON c.\"customerNumber\" = p.\"customerNumber\" GROUP BY c.\"customerNumber\", c.\"customerName\" ORDER BY total_paid DESC;"
+  },
+  {
+    "id": 10,
+    "question": "List all employees and their managers.",
+    "difficulty": "medium",
+    "category": "self join",
+    "tables": ["employees"],
+    "ground_truth_sql": "SELECT e.\"firstName\" || ' ' || e.\"lastName\" AS employee, m.\"firstName\" || ' ' || m.\"lastName\" AS manager FROM employees e LEFT JOIN employees m ON e.\"reportsTo\" = m.\"employeeNumber\" ORDER BY manager NULLS FIRST;"
+  },
+  {
+    "id": 11,
+    "question": "How many orders are in each status category?",
+    "difficulty": "easy",
+    "category": "group by",
+    "tables": ["orders"],
+    "ground_truth_sql": "SELECT status, COUNT(*) AS order_count FROM orders GROUP BY status ORDER BY order_count DESC;"
+  },
+  {
+    "id": 12,
+    "question": "What products have a buy price higher than their MSRP?",
+    "difficulty": "easy",
+    "category": "filter comparison",
+    "tables": ["products"],
+    "ground_truth_sql": "SELECT \"productName\", \"buyPrice\", \"MSRP\" FROM products WHERE \"buyPrice\" > \"MSRP\";"
+  },
+  {
+    "id": 13,
+    "question": "Which office has the most employees?",
+    "difficulty": "medium",
+    "category": "join + aggregation",
+    "tables": ["offices", "employees"],
+    "ground_truth_sql": "SELECT o.city, o.country, COUNT(e.\"employeeNumber\") AS employee_count FROM offices o JOIN employees e ON o.\"officeCode\" = e.\"officeCode\" GROUP BY o.\"officeCode\", o.city, o.country ORDER BY employee_count DESC LIMIT 1;"
+  },
+  {
+    "id": 14,
+    "question": "What is the average order value per customer?",
+    "difficulty": "hard",
+    "category": "multi-join + aggregation",
+    "tables": ["customers", "orders", "orderdetails"],
+    "ground_truth_sql": "SELECT c.\"customerName\", ROUND(AVG(order_total), 2) AS avg_order_value FROM customers c JOIN orders o ON c.\"customerNumber\" = o.\"customerNumber\" JOIN (SELECT \"orderNumber\", SUM(\"priceEach\" * \"quantityOrdered\") AS order_total FROM orderdetails GROUP BY \"orderNumber\") od ON o.\"orderNumber\" = od.\"orderNumber\" GROUP BY c.\"customerNumber\", c.\"customerName\" ORDER BY avg_order_value DESC LIMIT 20;"
+  },
+  {
+    "id": 15,
+    "question": "List all products with quantity in stock below 500.",
+    "difficulty": "easy",
+    "category": "filter",
+    "tables": ["products"],
+    "ground_truth_sql": "SELECT \"productName\", \"productLine\", \"quantityInStock\" FROM products WHERE \"quantityInStock\" < 500 ORDER BY \"quantityInStock\";"
+  },
+  {
+    "id": 16,
+    "question": "How many customers does each sales representative manage?",
+    "difficulty": "medium",
+    "category": "join + aggregation",
+    "tables": ["employees", "customers"],
+    "ground_truth_sql": "SELECT e.\"firstName\" || ' ' || e.\"lastName\" AS sales_rep, COUNT(c.\"customerNumber\") AS customer_count FROM employees e JOIN customers c ON e.\"employeeNumber\" = c.\"salesRepEmployeeNumber\" GROUP BY e.\"employeeNumber\", e.\"firstName\", e.\"lastName\" ORDER BY customer_count DESC;"
+  },
+  {
+    "id": 17,
+    "question": "What is the profit margin percentage for each product?",
+    "difficulty": "medium",
+    "category": "calculated column",
+    "tables": ["products"],
+    "ground_truth_sql": "SELECT \"productName\", \"buyPrice\", \"MSRP\", ROUND((\"MSRP\" - \"buyPrice\") / \"MSRP\" * 100, 2) AS margin_pct FROM products ORDER BY margin_pct DESC;"
+  },
+  {
+    "id": 18,
+    "question": "Which customers placed orders in both 2003 and 2004?",
+    "difficulty": "hard",
+    "category": "set intersection / subquery",
+    "tables": ["customers", "orders"],
+    "ground_truth_sql": "SELECT c.\"customerName\" FROM customers c WHERE c.\"customerNumber\" IN (SELECT \"customerNumber\" FROM orders WHERE EXTRACT(YEAR FROM \"orderDate\") = 2003) AND c.\"customerNumber\" IN (SELECT \"customerNumber\" FROM orders WHERE EXTRACT(YEAR FROM \"orderDate\") = 2004) ORDER BY c.\"customerName\";"
+  },
+  {
+    "id": 19,
+    "question": "What is the total revenue generated by each sales representative?",
+    "difficulty": "hard",
+    "category": "multi-join + aggregation",
+    "tables": ["employees", "customers", "orders", "orderdetails"],
+    "ground_truth_sql": "SELECT e.\"firstName\" || ' ' || e.\"lastName\" AS sales_rep, ROUND(SUM(od.\"priceEach\" * od.\"quantityOrdered\"), 2) AS total_revenue FROM employees e JOIN customers c ON e.\"employeeNumber\" = c.\"salesRepEmployeeNumber\" JOIN orders o ON c.\"customerNumber\" = o.\"customerNumber\" JOIN orderdetails od ON o.\"orderNumber\" = od.\"orderNumber\" GROUP BY e.\"employeeNumber\", e.\"firstName\", e.\"lastName\" ORDER BY total_revenue DESC;"
+  },
+  {
+    "id": 20,
+    "question": "Find the month with the highest number of orders placed.",
+    "difficulty": "medium",
+    "category": "date + aggregation",
+    "tables": ["orders"],
+    "ground_truth_sql": "SELECT TO_CHAR(\"orderDate\", 'YYYY-MM') AS month, COUNT(*) AS order_count FROM orders GROUP BY month ORDER BY order_count DESC LIMIT 1;"
+  }
+]

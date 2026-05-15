@@ -1,0 +1,1534 @@
+{
+  "summary": {
+    "total_questions": 50,
+    "passed": 50,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": 1,
+      "question": "List all products",
+      "status": "passed",
+      "row_count": 110,
+      "sample_rows": [
+        {
+          "productCode": "S24_2011",
+          "productName": "18th century schooner",
+          "productLine": "Ships",
+          "productVendor": "Carousel DieCast Legends",
+          "quantityInStock": "1898",
+          "buyPrice": "82.34",
+          "MSRP": "122.89"
+        },
+        {
+          "productCode": "S18_3136",
+          "productName": "18th Century Vintage Horse Carriage",
+          "productLine": "Vintage Cars",
+          "productVendor": "Red Start Diecast",
+          "quantityInStock": "5992",
+          "buyPrice": "60.74",
+          "MSRP": "104.72"
+        },
+        {
+          "productCode": "S24_2841",
+          "productName": "1900s Vintage Bi-Plane",
+          "productLine": "Planes",
+          "productVendor": "Autoart Studio Design",
+          "quantityInStock": "5942",
+          "buyPrice": "34.25",
+          "MSRP": "68.51"
+        },
+        {
+          "productCode": "S24_4278",
+          "productName": "1900s Vintage Tri-Plane",
+          "productLine": "Planes",
+          "productVendor": "Unimax Art Galleries",
+          "quantityInStock": "2756",
+          "buyPrice": "36.23",
+          "MSRP": "72.45"
+        },
+        {
+          "productCode": "S18_3140",
+          "productName": "1903 Ford Model A",
+          "productLine": "Vintage Cars",
+          "productVendor": "Unimax Art Galleries",
+          "quantityInStock": "3913",
+          "buyPrice": "68.30",
+          "MSRP": "136.59"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 2,
+      "question": "Get all customers",
+      "status": "passed",
+      "row_count": 122,
+      "sample_rows": [
+        {
+          "customerNumber": "242",
+          "customerName": "Alpha Cognac",
+          "contactFirstName": "Annette ",
+          "contactLastName": "Roulet",
+          "phone": "61.77.6555",
+          "city": "Toulouse",
+          "country": "France",
+          "creditLimit": "61100.00"
+        },
+        {
+          "customerNumber": "168",
+          "customerName": "American Souvenirs Inc",
+          "contactFirstName": "Keith",
+          "contactLastName": "Franco",
+          "phone": "2035557845",
+          "city": "New Haven",
+          "country": "USA",
+          "creditLimit": "0.00"
+        },
+        {
+          "customerNumber": "249",
+          "customerName": "Amica Models & Co.",
+          "contactFirstName": "Paolo ",
+          "contactLastName": "Accorti",
+          "phone": "011-4988555",
+          "city": "Torino",
+          "country": "Italy",
+          "creditLimit": "113000.00"
+        },
+        {
+          "customerNumber": "237",
+          "customerName": "ANG Resellers",
+          "contactFirstName": "Alejandra ",
+          "contactLastName": "Camino",
+          "phone": "(91) 745 6555",
+          "city": "Madrid",
+          "country": "Spain",
+          "creditLimit": "0.00"
+        },
+        {
+          "customerNumber": "276",
+          "customerName": "Anna's Decorations, Ltd",
+          "contactFirstName": "Anna",
+          "contactLastName": "O'Hara",
+          "phone": "02 9936 8555",
+          "city": "North Sydney",
+          "country": "Australia",
+          "creditLimit": "107800.00"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 3,
+      "question": "Show all orders",
+      "status": "passed",
+      "row_count": 326,
+      "sample_rows": [
+        {
+          "orderNumber": "10100",
+          "orderDate": "2003-01-06",
+          "requiredDate": "2003-01-13",
+          "shippedDate": "2003-01-10",
+          "status": "Shipped",
+          "customerNumber": "363"
+        },
+        {
+          "orderNumber": "10101",
+          "orderDate": "2003-01-09",
+          "requiredDate": "2003-01-18",
+          "shippedDate": "2003-01-11",
+          "status": "Shipped",
+          "customerNumber": "128"
+        },
+        {
+          "orderNumber": "10102",
+          "orderDate": "2003-01-10",
+          "requiredDate": "2003-01-18",
+          "shippedDate": "2003-01-14",
+          "status": "Shipped",
+          "customerNumber": "181"
+        },
+        {
+          "orderNumber": "10103",
+          "orderDate": "2003-01-29",
+          "requiredDate": "2003-02-07",
+          "shippedDate": "2003-02-02",
+          "status": "Shipped",
+          "customerNumber": "121"
+        },
+        {
+          "orderNumber": "10104",
+          "orderDate": "2003-01-31",
+          "requiredDate": "2003-02-09",
+          "shippedDate": "2003-02-01",
+          "status": "Shipped",
+          "customerNumber": "141"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 4,
+      "question": "List all employees",
+      "status": "passed",
+      "row_count": 23,
+      "sample_rows": [
+        {
+          "employeeNumber": "1002",
+          "firstName": "Diane",
+          "lastName": "Murphy",
+          "email": "dmurphy@classicmodelcars.com",
+          "jobTitle": "President",
+          "officeCode": "1",
+          "reportsTo": ""
+        },
+        {
+          "employeeNumber": "1056",
+          "firstName": "Mary",
+          "lastName": "Patterson",
+          "email": "mpatterso@classicmodelcars.com",
+          "jobTitle": "VP Sales",
+          "officeCode": "1",
+          "reportsTo": "1002"
+        },
+        {
+          "employeeNumber": "1076",
+          "firstName": "Jeff",
+          "lastName": "Firrelli",
+          "email": "jfirrelli@classicmodelcars.com",
+          "jobTitle": "VP Marketing",
+          "officeCode": "1",
+          "reportsTo": "1002"
+        },
+        {
+          "employeeNumber": "1088",
+          "firstName": "William",
+          "lastName": "Patterson",
+          "email": "wpatterson@classicmodelcars.com",
+          "jobTitle": "Sales Manager (APAC)",
+          "officeCode": "6",
+          "reportsTo": "1056"
+        },
+        {
+          "employeeNumber": "1102",
+          "firstName": "Gerard",
+          "lastName": "Bondur",
+          "email": "gbondur@classicmodelcars.com",
+          "jobTitle": "Sale Manager (EMEA)",
+          "officeCode": "4",
+          "reportsTo": "1056"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 5,
+      "question": "Get all offices",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "officeCode": "1",
+          "city": "San Francisco",
+          "phone": "+1 650 219 4782",
+          "addressLine1": "100 Market Street",
+          "addressLine2": "Suite 300",
+          "state": "CA",
+          "country": "USA",
+          "postalCode": "94080",
+          "territory": "NA"
+        },
+        {
+          "officeCode": "2",
+          "city": "Boston",
+          "phone": "+1 215 837 0825",
+          "addressLine1": "1550 Court Place",
+          "addressLine2": "Suite 102",
+          "state": "MA",
+          "country": "USA",
+          "postalCode": "02107",
+          "territory": "NA"
+        },
+        {
+          "officeCode": "3",
+          "city": "NYC",
+          "phone": "+1 212 555 3000",
+          "addressLine1": "523 East 53rd Street",
+          "addressLine2": "apt. 5A",
+          "state": "NY",
+          "country": "USA",
+          "postalCode": "10022",
+          "territory": "NA"
+        },
+        {
+          "officeCode": "4",
+          "city": "Paris",
+          "phone": "+33 14 723 4404",
+          "addressLine1": "43 Rue Jouffroy Dabbans",
+          "addressLine2": "",
+          "state": "",
+          "country": "France",
+          "postalCode": "75017",
+          "territory": "EMEA"
+        },
+        {
+          "officeCode": "5",
+          "city": "Tokyo",
+          "phone": "+81 33 224 5000",
+          "addressLine1": "4-1 Kioicho",
+          "addressLine2": "",
+          "state": "Chiyoda-Ku",
+          "country": "Japan",
+          "postalCode": "102-8578",
+          "territory": "Japan"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 6,
+      "question": "Show all product lines",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "productLine": "Classic Cars",
+          "textDescription": "Attention car enthusiasts: Make your wildest car ownership dreams come true. Whether you are looking for classic muscle cars, dream sports cars or movie-inspired miniatures, you will find great choices in this category. These replicas feature superb attention to detail and craftsmanship and offer features such as working steering system, opening forward compartment, opening rear trunk with removable spare wheel, 4-wheel independent spring suspension, and so on. The models range in size from 1:10 to 1:24 scale and include numerous limited edition and several out-of-production vehicles. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office."
+        },
+        {
+          "productLine": "Motorcycles",
+          "textDescription": "Our motorcycles are state of the art replicas of classic as well as contemporary motorcycle legends such as Harley Davidson, Ducati and Vespa. Models contain stunning details such as official logos, rotating wheels, working kickstand, front suspension, gear-shift lever, footbrake lever, and drive chain. Materials used include diecast and plastic. The models range in size from 1:10 to 1:50 scale and include numerous limited edition and several out-of-production vehicles. All models come fully assembled and ready for display in the home or office. Most include a certificate of authenticity."
+        },
+        {
+          "productLine": "Planes",
+          "textDescription": "Unique, diecast airplane and helicopter replicas suitable for collections, as well as home, office or classroom decorations. Models contain stunning details such as official logos and insignias, rotating jet engines and propellers, retractable wheels, and so on. Most come fully assembled and with a certificate of authenticity from their manufacturers."
+        },
+        {
+          "productLine": "Ships",
+          "textDescription": "The perfect holiday or anniversary gift for executives, clients, friends, and family. These handcrafted model ships are unique, stunning works of art that will be treasured for generations! They come fully assembled and ready for display in the home or office. We guarantee the highest quality, and best value."
+        },
+        {
+          "productLine": "Trains",
+          "textDescription": "Model trains are a rewarding hobby for enthusiasts of all ages. Whether you are looking for collectible wooden trains, electric streetcars or locomotives, youwill find a number of great choices for any budget within this category. The interactive aspect of trains makes toy trains perfect for young children. The wooden train sets are ideal for children under the age of 5."
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 7,
+      "question": "List all payments",
+      "status": "passed",
+      "row_count": 273,
+      "sample_rows": [
+        {
+          "customerNumber": "363",
+          "checkNumber": "IS232033",
+          "paymentDate": "2003-01-16",
+          "amount": "10223.83"
+        },
+        {
+          "customerNumber": "128",
+          "checkNumber": "DI925118",
+          "paymentDate": "2003-01-28",
+          "amount": "10549.01"
+        },
+        {
+          "customerNumber": "181",
+          "checkNumber": "GQ132144",
+          "paymentDate": "2003-01-30",
+          "amount": "5494.78"
+        },
+        {
+          "customerNumber": "121",
+          "checkNumber": "DB889831",
+          "paymentDate": "2003-02-16",
+          "amount": "50218.95"
+        },
+        {
+          "customerNumber": "145",
+          "checkNumber": "JJ246391",
+          "paymentDate": "2003-02-20",
+          "amount": "53959.21"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 8,
+      "question": "Get product names and prices",
+      "status": "passed",
+      "row_count": 110,
+      "sample_rows": [
+        {
+          "productName": "18th century schooner",
+          "buyPrice": "82.34",
+          "MSRP": "122.89"
+        },
+        {
+          "productName": "18th Century Vintage Horse Carriage",
+          "buyPrice": "60.74",
+          "MSRP": "104.72"
+        },
+        {
+          "productName": "1900s Vintage Bi-Plane",
+          "buyPrice": "34.25",
+          "MSRP": "68.51"
+        },
+        {
+          "productName": "1900s Vintage Tri-Plane",
+          "buyPrice": "36.23",
+          "MSRP": "72.45"
+        },
+        {
+          "productName": "1903 Ford Model A",
+          "buyPrice": "68.30",
+          "MSRP": "136.59"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 9,
+      "question": "Get customer names and cities",
+      "status": "passed",
+      "row_count": 122,
+      "sample_rows": [
+        {
+          "customerName": "Alpha Cognac",
+          "city": "Toulouse"
+        },
+        {
+          "customerName": "American Souvenirs Inc",
+          "city": "New Haven"
+        },
+        {
+          "customerName": "Amica Models & Co.",
+          "city": "Torino"
+        },
+        {
+          "customerName": "ANG Resellers",
+          "city": "Madrid"
+        },
+        {
+          "customerName": "Anna's Decorations, Ltd",
+          "city": "North Sydney"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 10,
+      "question": "List employee first and last names",
+      "status": "passed",
+      "row_count": 23,
+      "sample_rows": [
+        {
+          "firstName": "Gerard",
+          "lastName": "Bondur"
+        },
+        {
+          "firstName": "Loui",
+          "lastName": "Bondur"
+        },
+        {
+          "firstName": "Larry",
+          "lastName": "Bott"
+        },
+        {
+          "firstName": "Anthony",
+          "lastName": "Bow"
+        },
+        {
+          "firstName": "Pamela",
+          "lastName": "Castillo"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 11,
+      "question": "Get all order dates",
+      "status": "passed",
+      "row_count": 326,
+      "sample_rows": [
+        {
+          "orderNumber": "10100",
+          "orderDate": "2003-01-06"
+        },
+        {
+          "orderNumber": "10101",
+          "orderDate": "2003-01-09"
+        },
+        {
+          "orderNumber": "10102",
+          "orderDate": "2003-01-10"
+        },
+        {
+          "orderNumber": "10103",
+          "orderDate": "2003-01-29"
+        },
+        {
+          "orderNumber": "10104",
+          "orderDate": "2003-01-31"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 12,
+      "question": "Show product vendor list",
+      "status": "passed",
+      "row_count": 13,
+      "sample_rows": [
+        {
+          "productVendor": "Autoart Studio Design"
+        },
+        {
+          "productVendor": "Carousel DieCast Legends"
+        },
+        {
+          "productVendor": "Classic Metal Creations"
+        },
+        {
+          "productVendor": "Exoto Designs"
+        },
+        {
+          "productVendor": "Gearbox Collectibles"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 13,
+      "question": "Get all product codes",
+      "status": "passed",
+      "row_count": 110,
+      "sample_rows": [
+        {
+          "productCode": "S10_1678"
+        },
+        {
+          "productCode": "S10_1949"
+        },
+        {
+          "productCode": "S10_2016"
+        },
+        {
+          "productCode": "S10_4698"
+        },
+        {
+          "productCode": "S10_4757"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 14,
+      "question": "List all countries from offices",
+      "status": "passed",
+      "row_count": 5,
+      "sample_rows": [
+        {
+          "country": "Australia"
+        },
+        {
+          "country": "France"
+        },
+        {
+          "country": "Japan"
+        },
+        {
+          "country": "UK"
+        },
+        {
+          "country": "USA"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 15,
+      "question": "Show all order statuses",
+      "status": "passed",
+      "row_count": 6,
+      "sample_rows": [
+        {
+          "status": "Cancelled"
+        },
+        {
+          "status": "Disputed"
+        },
+        {
+          "status": "In Process"
+        },
+        {
+          "status": "On Hold"
+        },
+        {
+          "status": "Resolved"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 16,
+      "question": "Get all payment amounts",
+      "status": "passed",
+      "row_count": 273,
+      "sample_rows": [
+        {
+          "checkNumber": "JE105477",
+          "paymentDate": "2005-03-18",
+          "amount": "120166.58"
+        },
+        {
+          "checkNumber": "ID10962",
+          "paymentDate": "2004-12-31",
+          "amount": "116208.40"
+        },
+        {
+          "checkNumber": "KI131716",
+          "paymentDate": "2003-08-15",
+          "amount": "111654.40"
+        },
+        {
+          "checkNumber": "KM172879",
+          "paymentDate": "2003-12-26",
+          "amount": "105743.00"
+        },
+        {
+          "checkNumber": "AE215433",
+          "paymentDate": "2005-03-05",
+          "amount": "101244.59"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 17,
+      "question": "List all job titles",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "jobTitle": "President"
+        },
+        {
+          "jobTitle": "Sale Manager (EMEA)"
+        },
+        {
+          "jobTitle": "Sales Manager (APAC)"
+        },
+        {
+          "jobTitle": "Sales Manager (NA)"
+        },
+        {
+          "jobTitle": "Sales Rep"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 18,
+      "question": "Get customer phone numbers",
+      "status": "passed",
+      "row_count": 122,
+      "sample_rows": [
+        {
+          "customerName": "Alpha Cognac",
+          "phone": "61.77.6555"
+        },
+        {
+          "customerName": "American Souvenirs Inc",
+          "phone": "2035557845"
+        },
+        {
+          "customerName": "Amica Models & Co.",
+          "phone": "011-4988555"
+        },
+        {
+          "customerName": "ANG Resellers",
+          "phone": "(91) 745 6555"
+        },
+        {
+          "customerName": "Anna's Decorations, Ltd",
+          "phone": "02 9936 8555"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 19,
+      "question": "Show product MSRP values",
+      "status": "passed",
+      "row_count": 110,
+      "sample_rows": [
+        {
+          "productName": "1952 Alpine Renault 1300",
+          "MSRP": "214.30"
+        },
+        {
+          "productName": "2001 Ferrari Enzo",
+          "MSRP": "207.80"
+        },
+        {
+          "productName": "1968 Ford Mustang",
+          "MSRP": "194.57"
+        },
+        {
+          "productName": "2003 Harley-Davidson Eagle Drag Bike",
+          "MSRP": "193.66"
+        },
+        {
+          "productName": "1969 Ford Falcon",
+          "MSRP": "173.02"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 20,
+      "question": "List order numbers",
+      "status": "passed",
+      "row_count": 326,
+      "sample_rows": [
+        {
+          "orderNumber": "10100"
+        },
+        {
+          "orderNumber": "10101"
+        },
+        {
+          "orderNumber": "10102"
+        },
+        {
+          "orderNumber": "10103"
+        },
+        {
+          "orderNumber": "10104"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 21,
+      "question": "Get orders with customer names",
+      "status": "passed",
+      "row_count": 326,
+      "sample_rows": [
+        {
+          "orderNumber": "10100",
+          "orderDate": "2003-01-06",
+          "status": "Shipped",
+          "customerName": "Online Diecast Creations Co."
+        },
+        {
+          "orderNumber": "10101",
+          "orderDate": "2003-01-09",
+          "status": "Shipped",
+          "customerName": "Blauer See Auto, Co."
+        },
+        {
+          "orderNumber": "10102",
+          "orderDate": "2003-01-10",
+          "status": "Shipped",
+          "customerName": "Vitachrome Inc."
+        },
+        {
+          "orderNumber": "10103",
+          "orderDate": "2003-01-29",
+          "status": "Shipped",
+          "customerName": "Baane Mini Imports"
+        },
+        {
+          "orderNumber": "10104",
+          "orderDate": "2003-01-31",
+          "status": "Shipped",
+          "customerName": "Euro+ Shopping Channel"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 22,
+      "question": "Get employees with office city",
+      "status": "passed",
+      "row_count": 23,
+      "sample_rows": [
+        {
+          "employeeNumber": "1002",
+          "firstName": "Diane",
+          "lastName": "Murphy",
+          "jobTitle": "President",
+          "office_city": "San Francisco"
+        },
+        {
+          "employeeNumber": "1056",
+          "firstName": "Mary",
+          "lastName": "Patterson",
+          "jobTitle": "VP Sales",
+          "office_city": "San Francisco"
+        },
+        {
+          "employeeNumber": "1076",
+          "firstName": "Jeff",
+          "lastName": "Firrelli",
+          "jobTitle": "VP Marketing",
+          "office_city": "San Francisco"
+        },
+        {
+          "employeeNumber": "1088",
+          "firstName": "William",
+          "lastName": "Patterson",
+          "jobTitle": "Sales Manager (APAC)",
+          "office_city": "Sydney"
+        },
+        {
+          "employeeNumber": "1102",
+          "firstName": "Gerard",
+          "lastName": "Bondur",
+          "jobTitle": "Sale Manager (EMEA)",
+          "office_city": "Paris"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 23,
+      "question": "Get payments with customer names",
+      "status": "passed",
+      "row_count": 273,
+      "sample_rows": [
+        {
+          "checkNumber": "IS232033",
+          "paymentDate": "2003-01-16",
+          "amount": "10223.83",
+          "customerName": "Online Diecast Creations Co."
+        },
+        {
+          "checkNumber": "DI925118",
+          "paymentDate": "2003-01-28",
+          "amount": "10549.01",
+          "customerName": "Blauer See Auto, Co."
+        },
+        {
+          "checkNumber": "GQ132144",
+          "paymentDate": "2003-01-30",
+          "amount": "5494.78",
+          "customerName": "Vitachrome Inc."
+        },
+        {
+          "checkNumber": "DB889831",
+          "paymentDate": "2003-02-16",
+          "amount": "50218.95",
+          "customerName": "Baane Mini Imports"
+        },
+        {
+          "checkNumber": "JJ246391",
+          "paymentDate": "2003-02-20",
+          "amount": "53959.21",
+          "customerName": "Danish Wholesale Imports"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 24,
+      "question": "Get order details with product names",
+      "status": "passed",
+      "row_count": 2996,
+      "sample_rows": [
+        {
+          "orderNumber": "10100",
+          "productCode": "S24_3969",
+          "productName": "1936 Mercedes Benz 500k Roadster",
+          "quantityOrdered": "49",
+          "priceEach": "35.29"
+        },
+        {
+          "orderNumber": "10100",
+          "productCode": "S18_2248",
+          "productName": "1911 Ford Town Car",
+          "quantityOrdered": "50",
+          "priceEach": "55.09"
+        },
+        {
+          "orderNumber": "10100",
+          "productCode": "S18_1749",
+          "productName": "1917 Grand Touring Sedan",
+          "quantityOrdered": "30",
+          "priceEach": "136.00"
+        },
+        {
+          "orderNumber": "10100",
+          "productCode": "S18_4409",
+          "productName": "1932 Alfa Romeo 8C2300 Spider Sport",
+          "quantityOrdered": "22",
+          "priceEach": "75.46"
+        },
+        {
+          "orderNumber": "10101",
+          "productCode": "S18_2795",
+          "productName": "1928 Mercedes-Benz SSK",
+          "quantityOrdered": "26",
+          "priceEach": "167.06"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 25,
+      "question": "Get products with product line description",
+      "status": "passed",
+      "row_count": 110,
+      "sample_rows": [
+        {
+          "productCode": "S24_2011",
+          "productName": "18th century schooner",
+          "productLine": "Ships",
+          "textDescription": "The perfect holiday or anniversary gift for executives, clients, friends, and family. These handcrafted model ships are unique, stunning works of art that will be treasured for generations! They come fully assembled and ready for display in the home or office. We guarantee the highest quality, and best value."
+        },
+        {
+          "productCode": "S18_3136",
+          "productName": "18th Century Vintage Horse Carriage",
+          "productLine": "Vintage Cars",
+          "textDescription": "Our Vintage Car models realistically portray automobiles produced from the early 1900s through the 1940s. Materials used include Bakelite, diecast, plastic and wood. Most of the replicas are in the 1:18 and 1:24 scale sizes, which provide the optimum in detail and accuracy. Prices range from $30.00 up to $180.00 for some special limited edition replicas. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office."
+        },
+        {
+          "productCode": "S24_2841",
+          "productName": "1900s Vintage Bi-Plane",
+          "productLine": "Planes",
+          "textDescription": "Unique, diecast airplane and helicopter replicas suitable for collections, as well as home, office or classroom decorations. Models contain stunning details such as official logos and insignias, rotating jet engines and propellers, retractable wheels, and so on. Most come fully assembled and with a certificate of authenticity from their manufacturers."
+        },
+        {
+          "productCode": "S24_4278",
+          "productName": "1900s Vintage Tri-Plane",
+          "productLine": "Planes",
+          "textDescription": "Unique, diecast airplane and helicopter replicas suitable for collections, as well as home, office or classroom decorations. Models contain stunning details such as official logos and insignias, rotating jet engines and propellers, retractable wheels, and so on. Most come fully assembled and with a certificate of authenticity from their manufacturers."
+        },
+        {
+          "productCode": "S18_3140",
+          "productName": "1903 Ford Model A",
+          "productLine": "Vintage Cars",
+          "textDescription": "Our Vintage Car models realistically portray automobiles produced from the early 1900s through the 1940s. Materials used include Bakelite, diecast, plastic and wood. Most of the replicas are in the 1:18 and 1:24 scale sizes, which provide the optimum in detail and accuracy. Prices range from $30.00 up to $180.00 for some special limited edition replicas. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office."
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 26,
+      "question": "Get customers with sales rep names",
+      "status": "passed",
+      "row_count": 122,
+      "sample_rows": [
+        {
+          "customerNumber": "242",
+          "customerName": "Alpha Cognac",
+          "sales_rep_name": "Gerard Hernandez"
+        },
+        {
+          "customerNumber": "168",
+          "customerName": "American Souvenirs Inc",
+          "sales_rep_name": "Foon Yue Tseng"
+        },
+        {
+          "customerNumber": "249",
+          "customerName": "Amica Models & Co.",
+          "sales_rep_name": "Pamela Castillo"
+        },
+        {
+          "customerNumber": "237",
+          "customerName": "ANG Resellers",
+          "sales_rep_name": ""
+        },
+        {
+          "customerNumber": "276",
+          "customerName": "Anna's Decorations, Ltd",
+          "sales_rep_name": "Andy Fixter"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 27,
+      "question": "Get orders with customer city",
+      "status": "passed",
+      "row_count": 326,
+      "sample_rows": [
+        {
+          "orderNumber": "10100",
+          "orderDate": "2003-01-06",
+          "status": "Shipped",
+          "customer_city": "Nashua"
+        },
+        {
+          "orderNumber": "10101",
+          "orderDate": "2003-01-09",
+          "status": "Shipped",
+          "customer_city": "Frankfurt"
+        },
+        {
+          "orderNumber": "10102",
+          "orderDate": "2003-01-10",
+          "status": "Shipped",
+          "customer_city": "NYC"
+        },
+        {
+          "orderNumber": "10103",
+          "orderDate": "2003-01-29",
+          "status": "Shipped",
+          "customer_city": "Stavern"
+        },
+        {
+          "orderNumber": "10104",
+          "orderDate": "2003-01-31",
+          "status": "Shipped",
+          "customer_city": "Madrid"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 28,
+      "question": "Get employees and their manager",
+      "status": "passed",
+      "row_count": 23,
+      "sample_rows": [
+        {
+          "employeeNumber": "1002",
+          "employee_name": "Diane Murphy",
+          "manager_name": ""
+        },
+        {
+          "employeeNumber": "1056",
+          "employee_name": "Mary Patterson",
+          "manager_name": "Diane Murphy"
+        },
+        {
+          "employeeNumber": "1076",
+          "employee_name": "Jeff Firrelli",
+          "manager_name": "Diane Murphy"
+        },
+        {
+          "employeeNumber": "1088",
+          "employee_name": "William Patterson",
+          "manager_name": "Mary Patterson"
+        },
+        {
+          "employeeNumber": "1102",
+          "employee_name": "Gerard Bondur",
+          "manager_name": "Mary Patterson"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 29,
+      "question": "Get orderdetails with product vendor",
+      "status": "passed",
+      "row_count": 2996,
+      "sample_rows": [
+        {
+          "orderNumber": "10100",
+          "productCode": "S24_3969",
+          "productVendor": "Red Start Diecast",
+          "quantityOrdered": "49",
+          "priceEach": "35.29"
+        },
+        {
+          "orderNumber": "10100",
+          "productCode": "S18_2248",
+          "productVendor": "Motor City Art Classics",
+          "quantityOrdered": "50",
+          "priceEach": "55.09"
+        },
+        {
+          "orderNumber": "10100",
+          "productCode": "S18_1749",
+          "productVendor": "Welly Diecast Productions",
+          "quantityOrdered": "30",
+          "priceEach": "136.00"
+        },
+        {
+          "orderNumber": "10100",
+          "productCode": "S18_4409",
+          "productVendor": "Exoto Designs",
+          "quantityOrdered": "22",
+          "priceEach": "75.46"
+        },
+        {
+          "orderNumber": "10101",
+          "productCode": "S18_2795",
+          "productVendor": "Gearbox Collectibles",
+          "quantityOrdered": "26",
+          "priceEach": "167.06"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 30,
+      "question": "Get payments with customer country",
+      "status": "passed",
+      "row_count": 273,
+      "sample_rows": [
+        {
+          "checkNumber": "IS232033",
+          "paymentDate": "2003-01-16",
+          "amount": "10223.83",
+          "customer_country": "USA"
+        },
+        {
+          "checkNumber": "DI925118",
+          "paymentDate": "2003-01-28",
+          "amount": "10549.01",
+          "customer_country": "Germany"
+        },
+        {
+          "checkNumber": "GQ132144",
+          "paymentDate": "2003-01-30",
+          "amount": "5494.78",
+          "customer_country": "USA"
+        },
+        {
+          "checkNumber": "DB889831",
+          "paymentDate": "2003-02-16",
+          "amount": "50218.95",
+          "customer_country": "Norway"
+        },
+        {
+          "checkNumber": "JJ246391",
+          "paymentDate": "2003-02-20",
+          "amount": "53959.21",
+          "customer_country": "Denmark"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 31,
+      "question": "Count customers per country",
+      "status": "passed",
+      "row_count": 28,
+      "sample_rows": [
+        {
+          "country": "USA",
+          "customer_count": "36"
+        },
+        {
+          "country": "Germany",
+          "customer_count": "13"
+        },
+        {
+          "country": "France",
+          "customer_count": "12"
+        },
+        {
+          "country": "Spain",
+          "customer_count": "7"
+        },
+        {
+          "country": "Australia",
+          "customer_count": "5"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 32,
+      "question": "Total payments per customer",
+      "status": "passed",
+      "row_count": 98,
+      "sample_rows": [
+        {
+          "customerNumber": "141",
+          "customerName": "Euro+ Shopping Channel",
+          "total_payments": "715738.98"
+        },
+        {
+          "customerNumber": "124",
+          "customerName": "Mini Gifts Distributors Ltd.",
+          "total_payments": "584188.24"
+        },
+        {
+          "customerNumber": "114",
+          "customerName": "Australian Collectors, Co.",
+          "total_payments": "180585.07"
+        },
+        {
+          "customerNumber": "151",
+          "customerName": "Muscle Machine Inc",
+          "total_payments": "177913.95"
+        },
+        {
+          "customerNumber": "148",
+          "customerName": "Dragon Souveniers, Ltd.",
+          "total_payments": "156251.03"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 33,
+      "question": "Number of orders per status",
+      "status": "passed",
+      "row_count": 6,
+      "sample_rows": [
+        {
+          "status": "Shipped",
+          "order_count": "303"
+        },
+        {
+          "status": "Cancelled",
+          "order_count": "6"
+        },
+        {
+          "status": "In Process",
+          "order_count": "6"
+        },
+        {
+          "status": "On Hold",
+          "order_count": "4"
+        },
+        {
+          "status": "Resolved",
+          "order_count": "4"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 34,
+      "question": "Products per product line",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "productLine": "Classic Cars",
+          "product_count": "38"
+        },
+        {
+          "productLine": "Vintage Cars",
+          "product_count": "24"
+        },
+        {
+          "productLine": "Motorcycles",
+          "product_count": "13"
+        },
+        {
+          "productLine": "Planes",
+          "product_count": "12"
+        },
+        {
+          "productLine": "Trucks and Buses",
+          "product_count": "11"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 35,
+      "question": "Employees per office",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "officeCode": "1",
+          "city": "San Francisco",
+          "employee_count": "6"
+        },
+        {
+          "officeCode": "4",
+          "city": "Paris",
+          "employee_count": "5"
+        },
+        {
+          "officeCode": "6",
+          "city": "Sydney",
+          "employee_count": "4"
+        },
+        {
+          "officeCode": "2",
+          "city": "Boston",
+          "employee_count": "2"
+        },
+        {
+          "officeCode": "3",
+          "city": "NYC",
+          "employee_count": "2"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 36,
+      "question": "Total stock per product vendor",
+      "status": "passed",
+      "row_count": 13,
+      "sample_rows": [
+        {
+          "productVendor": "Gearbox Collectibles",
+          "total_stock": "60495"
+        },
+        {
+          "productVendor": "Min Lin Diecast",
+          "total_stock": "50089"
+        },
+        {
+          "productVendor": "Classic Metal Creations",
+          "total_stock": "45408"
+        },
+        {
+          "productVendor": "Welly Diecast Productions",
+          "total_stock": "45095"
+        },
+        {
+          "productVendor": "Exoto Designs",
+          "total_stock": "44166"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 37,
+      "question": "Average buy price per product line",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "productLine": "Classic Cars",
+          "average_buy_price": "64.45"
+        },
+        {
+          "productLine": "Trucks and Buses",
+          "average_buy_price": "56.33"
+        },
+        {
+          "productLine": "Motorcycles",
+          "average_buy_price": "50.69"
+        },
+        {
+          "productLine": "Planes",
+          "average_buy_price": "49.63"
+        },
+        {
+          "productLine": "Ships",
+          "average_buy_price": "47.01"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 38,
+      "question": "Orders per customer",
+      "status": "passed",
+      "row_count": 122,
+      "sample_rows": [
+        {
+          "customerNumber": "141",
+          "customerName": "Euro+ Shopping Channel",
+          "order_count": "26"
+        },
+        {
+          "customerNumber": "124",
+          "customerName": "Mini Gifts Distributors Ltd.",
+          "order_count": "17"
+        },
+        {
+          "customerNumber": "114",
+          "customerName": "Australian Collectors, Co.",
+          "order_count": "5"
+        },
+        {
+          "customerNumber": "145",
+          "customerName": "Danish Wholesale Imports",
+          "order_count": "5"
+        },
+        {
+          "customerNumber": "323",
+          "customerName": "Down Under Souveniers, Inc",
+          "order_count": "5"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 39,
+      "question": "Max MSRP per product line",
+      "status": "passed",
+      "row_count": 7,
+      "sample_rows": [
+        {
+          "productLine": "Classic Cars",
+          "max_msrp": "214.30"
+        },
+        {
+          "productLine": "Motorcycles",
+          "max_msrp": "193.66"
+        },
+        {
+          "productLine": "Vintage Cars",
+          "max_msrp": "170.00"
+        },
+        {
+          "productLine": "Planes",
+          "max_msrp": "157.69"
+        },
+        {
+          "productLine": "Trucks and Buses",
+          "max_msrp": "136.67"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 40,
+      "question": "Min buy price per vendor",
+      "status": "passed",
+      "row_count": 13,
+      "sample_rows": [
+        {
+          "productVendor": "Carousel DieCast Legends",
+          "min_buy_price": "15.91"
+        },
+        {
+          "productVendor": "Second Gear Diecast",
+          "min_buy_price": "16.24"
+        },
+        {
+          "productVendor": "Classic Metal Creations",
+          "min_buy_price": "20.61"
+        },
+        {
+          "productVendor": "Red Start Diecast",
+          "min_buy_price": "21.75"
+        },
+        {
+          "productVendor": "Motor City Art Classics",
+          "min_buy_price": "22.57"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 41,
+      "question": "Total number of customers",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "total_customers": "122"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 42,
+      "question": "Total number of products",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "total_products": "110"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 43,
+      "question": "Total revenue from payments",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "total_revenue": "8853839.23"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 44,
+      "question": "Average product price",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "average_product_price": "54.40"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 45,
+      "question": "Max payment amount",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "max_payment_amount": "120166.58"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 46,
+      "question": "Min payment amount",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "min_payment_amount": "615.45"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 47,
+      "question": "Count total orders",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "total_orders": "326"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 48,
+      "question": "Total quantity in stock",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "total_quantity_in_stock": "555131"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 49,
+      "question": "Average MSRP",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "average_msrp": "100.44"
+        }
+      ],
+      "error": ""
+    },
+    {
+      "id": 50,
+      "question": "Number of employees",
+      "status": "passed",
+      "row_count": 1,
+      "sample_rows": [
+        {
+          "total_employees": "23"
+        }
+      ],
+      "error": ""
+    }
+  ]
+}

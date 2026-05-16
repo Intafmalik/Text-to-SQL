@@ -1,0 +1,10 @@
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=classicmodels
+DB_USER=classicuser
+DB_PASSWORD=classicpass
+
+GOOGLE_API_KEY=AIzaSyCs7sO4xtRneKk8Nk4PyuCTlwxQ0mRyxRs
+GEMINI_MODEL=gemini-1.5-flash
+TEMPERATURE=0.1
+MAX_RETRIES=3

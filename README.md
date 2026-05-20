@@ -7,10 +7,10 @@
 
 This project builds a **complete Text-to-SQL agentic system** on top of the ClassicModels database (orders, products, customers, employees, offices, payments, orderdetails, productlines). It covers:
 
-- **Task 1** — SQL Benchmark Dataset (ground truth queries)
-- **Task 2** — Evaluation Strategy design
-- **Task 3** — Text-to-SQL Agent (LangChain + Gemini)
-- **Task 4** — Agentic query execution with self-correction
+- **1** — SQL Benchmark Dataset (ground truth queries)
+- **2** — Evaluation Strategy design
+- **3** — Text-to-SQL Agent (LangChain + Gemini)
+- **4** — Agentic query execution with self-correction
 
 ---
 
